@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SkyCast Weather App</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌦 SkyCast</h1>
+
+<p class="subtitle">
+Real-Time Weather Forecast
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="city"
+placeholder="Enter City Name">
+
+<button onclick="getWeather()">
+Search
+</button>
+
+</div>
+
+<button class="location-btn"
+onclick="getLocationWeather()">
+📍 Use My Location
+</button>
+
+<div class="weather">
+
+<div id="icon" class="weather-icon">
+☀️
+</div>
+
+<h2 id="cityName">
+Search a City
+</h2>
+
+<h1 id="temperature">
+--
+</h1>
+
+<p id="description">
+Weather Description
+</p>
+
+<div class="details">
+
+<div class="card">
+
+<h3>💧 Humidity</h3>
+
+<p id="humidity">
+--
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌬 Wind</h3>
+
+<p id="wind">
+--
+</p>
+
+</div>
+
+</div>
+
+<div id="clock" class="clock"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
